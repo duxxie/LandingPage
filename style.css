@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+}
+
+header, #Hero, #information{
+    display: flex;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+#main{
+    background-color: #1F2937;  
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.headertext, .links a{
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.links{
+    gap: 100px;
+}
+
+.headertext{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#Hero{
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+.HeroMain{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.HeroSecondary{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.placeholder{
+    width: 400px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.button{
+    color: #F9FAF8;
+    background-color: #3882F6;
+    margin-top: 10px;
+    width: 100px;
+    padding: 8px;
+    border-radius: 10%;
+    border-style: none;
+}
+
+#information{
+    display: block;
+    background-color: #F9FAF8;
+    padding-top: 30px;
+}
+
+#infotext{
+    color: #1F2937;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.infobox{
+    display: flex;
+}
+
+.content{
+    text-align: center;
+    justify-items: center;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    border: 3px #3882F6 solid;
+    border-radius: 10%;
+}
