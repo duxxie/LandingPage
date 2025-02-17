@@ -2,18 +2,22 @@
     margin: 0;
 }
 
-header, #Hero, #information{
+body{
+}
+
+header, #Hero, #information, #quote, #call, footer{
     display: flex;
     padding-left: 300px;
     padding-right: 300px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-#main{
-    background-color: #1F2937;  
+#main, footer{
+    background-color: #1F2937;
 }
 
 header{
-    display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
@@ -39,20 +43,22 @@ ul{
 }
 
 #Hero{
-    display: flex;
+    padding-top: 30px;
     align-items: center;
-    height: 400px;
+    justify-content: space-between;
 }
 
 .HeroMain{
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    flex: 1;
 }
 
 .HeroSecondary{
     font-size: 18px;
     color: #E5E7EB;
+    flex: 1;
 }
 
 .placeholder{
@@ -67,14 +73,13 @@ ul{
     margin-top: 10px;
     width: 100px;
     padding: 8px;
-    border-radius: 10%;
+    border-radius: 10px;
     border-style: none;
 }
 
 #information{
     display: block;
-    background-color: #F9FAF8;
-    padding-top: 30px;
+    background-color: #ffffff;
 }
 
 #infotext{
@@ -90,6 +95,7 @@ ul{
 }
 
 .content{
+    flex: 1;
     text-align: center;
     justify-items: center;
 }
@@ -99,4 +105,68 @@ ul{
     height: 150px;
     border: 3px #3882F6 solid;
     border-radius: 10%;
+}
+
+#quote{
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    justify-content: left;
+}
+
+.quotetext,
+.quoteauthor{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #1F2937;
+}
+
+.quotetext{
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quoteauthor{
+    font-weight: 800;
+}
+
+.quoteauthor{
+    align-self: self-end;
+}
+
+#call{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#callbox{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 40px;
+    background-color: #3882F6;
+    border-radius: 5px;
+    justify-content: space-between;
+    border-style: none;
+}
+
+#callbox p{
+    color: #ffffff;
+}
+
+#callbox .button{
+    border: 2px solid #ffffff;
+}
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer{
+    color: white;
 }
